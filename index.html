@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <title>Alexis' Portfolio</title>
+</head>
+<body>
+    <div id="nav">
+        <div class="my-name">
+            <p> Alexis Valeria Tamayo</p>
+            <img src="" alt="">
+        </div>
+        <div class="tabs">
+            <ul>
+                <li><a href="#picture-row"> About Me </a></li>
+                <li><a href="#project-section"> Projects </a></li>
+                <li><a href=""> Resume </a></li>
+                <li><a href=""> Education </a></li>
+                <li><a href=""> Contact me </a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="alexis-content">
+        <div class="title tag">
+            <h1>Console<span style="color:white;">.<span style="color:#e06c75;">log</span>("</h1>
+            <div class="string">
+                <h1 class="greeting en">Hello World!</h1>
+                <h1 class="greeting es">I am Alexis!</h1>
+                <h1 class="greeting de">Nice to Meet you!</h1>
+                <h1 class="greeting it">Thanks for Coming!</h1>  
+            </div>
+            <h1 class="closure">");</h1>
+        </div>    
+        <div id="picture-row">
+            <div class="picture tag">
+                <img id="firstPic" onclick="changePic1(this)" src="./assets/ChickPick.JPG" alt=" Pictures of me volunteering in Kentucky ">
+                <p> There may be nothing that I love more than creating and building. In this case, I volunteered in Kentucky to rebuild houses with C.A.P. </p>
+                <p> Can't say I love how sore I was though.</p>
+                <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo dolor rerum soluta sapiente expedita eveniet! Nihil vel eveniet soluta, error sed deleniti voluptate deserunt, iste sint perspiciatis veritatis in?</p> -->
+            </div>
+            <div class="picture tag">
+                <img id="secPic" onclick="changePic2(this)" src="./assets/PoohMeetGreet.jpg" alt=" Pictures of me at Disney World with Winnie ">
+                <p>  "It never hurts to keep looking for sunshine." -Eeyore </p>
+                <p> While Winnie is still my favorite, sad I did not get a picture with Eeyore. </p>
+                <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo dolor rerum soluta sapiente expedita eveniet! Nihil vel eveniet soluta, error sed deleniti voluptate deserunt, iste sint perspiciatis veritatis in?</p> -->
+            </div>
+            <div class="picture tag">
+                <img id="thirdPic" onclick="changePic3(this)" src="./assets/kotrynaProm.JPG" alt=" Pictures of me at work">
+                <p> If I had a penny for every joyful moment I had with Starbucks - I would have more money than Jeff Bezos. Can't wait to see how many more pennies I'll earn in my new position! </p>
+                <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo dolor rerum soluta sapiente expedita eveniet! Nihil vel eveniet soluta, error sed deleniti voluptate deserunt, iste sint perspiciatis veritatis in?</p> -->
+            </div>
+        </div>
+        <div class="description tag">
+            <h2>Get to know the creator!</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quaerat veritatis eveniet maiores ut, nostrum nobis commodi quo voluptates sunt sequi quisquam consequatur quidem ratione officia tempore, rerum iste dignissimos!</p>
+            <p> Through my past and current work experience, I am often described as an extroverted and energetic team leader. l have the natural ability to bring everyone together, working as a unit through my patience, coherence, and resilience. A strong pride is restored in me when I see all my efforts in making sure everyone is working at their best capacity, due to my hands-on teaching and learning style. Building off of my team's skills, while ensuring proper results, enabled me to become a more focused collaborator. These learning opportunities, over the years, have taught me that consistency and commitment are essential for personal and professional growth. I am eager to apply all these attributes moving forward towards new goals surrounding an exciting new career path. </p>
+        </div>
+    </div>
+    <div id="word-cloud-section" class="tag">
+        <div id="cloud-title">
+            <h2> How would my colleages describe me?</h2>
+            <button type="button" class="btn-transition" onclick="fadeInCloud()"> Click to see!</button>
+        </div>
+        <div id="word-cloud">
+            <ul class="cloud" class="fadeIn" role="navigation" aria-label="Webdev tag">
+                <li><a href="" data-weight="2"> Confident </a></li>
+                <li><a href="" data-weight="3"> Versatile </a></li>
+                <li><a href="" data-weight="7"> Adaptive </a></li>
+                <li><a href="" data-weight="7"> Supportive </a></li>
+                <li><a href="" data-weight="3"> Detail-Oriented </a></li>
+                <li><a href="" data-weight="9"> Motivated </a></li>
+                <li><a href="" data-weight="4"> Funny </a></li>
+                <li><a href="" data-weight="8"> Diligent </a></li>
+                <li><a href="" data-weight="6"> Sincere </a></li>
+                <li><a href="" data-weight="3"> Ambitious </a></li>
+                <li><a href="" data-weight="5"> Amusing </a></li>
+            </ul>
+        </div>
+
+    </div>
+    <h2> Projects </h2>
+    <div id="project-section">
+        <div class="projects tag">
+            <div class="project-picture">
+                <img  src=".\assets\Statler.png" alt="">
+                    <div class="overlay">
+                        <div class="text"> check </div>
+                    </div>
+                <div class="project-description">
+                    <h3> Statler & Waldorf </h3>
+                    <p> A group collaboration resulting in a web application where users can upload their own movies and rate them, as well as see the actors involved.</p>
+                    <a href="https://github.com/Carlos333AM/group_project_2022"><img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="project-picture">
+                <img  src="./assets/ChickPick.JPG" alt="">
+                    <div class="overlay">
+                        <div class="text"> check </div>
+                    </div>
+                <!-- it is the left and right of the picturw  -->
+                <div class="project-description">
+                    <h3> Project Title</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi accusantium nobis doloremque corrupti dolores omnis asperiores</p>
+                    <img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                </div>
+            </div>
+        </div>        <div class="projects">
+            <div class="project-picture">
+                <img  src="./assets/ChickPick.JPG" alt="">
+                    <div class="overlay">
+                        <div class="text"> check </div>
+                    </div>
+                <!-- it is the left and right of the picturw  -->
+                <div class="project-description">
+                    <h3> Project Title</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam animi accusantium nobis doloremque corrupti dolores omnis asperiores</p>
+                    <img  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2> Technical Skills</h2>
+    <div id="skill-section">
+        <div class="skill-box ">
+            <div class="lang tag">
+                <h3> Html </h3>
+                <img style="color: #e06c75;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            </div>
+            <div class="lang tag">
+                <h3> CSS </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+            </div>
+            <div class="lang tag">
+                <h3> Javascript </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            </div>
+            <!-- <div class="lang">
+                <h3> SQL </h3>
+            </div> -->
+            <div class="lang tag">
+                <h3> Java </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" />
+            </div>
+            <div class="lang tag">
+                <h3 > Python </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
+            </div>
+        </div>
+
+        <div class="skill-box ">
+            <div class="lang tag">
+                <h3 class=> SpringBoot </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
+            </div>
+            <!-- <div class="lang">
+                <h3> Ajax </h3>
+            </div> -->
+            <div class="lang tag">
+                <h3> JQuery </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+            </div>
+            <div class="lang tag">
+                <h3> Flask </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+            </div>
+        </div>
+        <div class="skill-box ">
+
+            <div class="lang tag">
+                <h3> Git </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            </div>
+            <div class="lang tag">
+                <h3> Github </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            </div>
+            <!-- <div class="lang">
+                <h3> MySQL Workbench</h3>
+            </div> -->
+            <div class="lang tag">
+                <h3> Bootstrap </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+            </div>
+            <div class="lang tag">
+                <h3> MySQL </h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+            </div>
+        </div>
+    </div>
+    <div id="resume">
+        <h2> Like what you see so far? Take a look a further look.</h2>
+
+        <a href=".\assets\Alexis V. Resume.pdf"> <img src=".\assets\stockResume.png"></a>
+        <a href=".\assets\cert.pdf"> <img src="./assets/stockCert.jpg"></a>
+
+    </div>
+
+    <footer id="footer">
+        <div>
+            <p> Thank you, don't forget to contact me!</p>
+        </div>
+        <div class="icons">
+            <a href="https://linkedin.com/in/alexis-tamayo-aa16331b0"><i class="devicon-linkedin-plain"></i></a>
+            <a href="https://github.com/Lexx426"><i class="devicon-github-original"></i></a>
+            <!-- <i class="fas fa-envelope-square"></i>     -->
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,587 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(56, 42, 84);
+    /* background-color: var(--tan); */
+}
+
+body{
+    background: linear-gradient(to right, gray , rgb(146, 94, 178), gray);
+
+}
+h2{
+    font-size: 2.5rem
+}
+:root{
+    --tan:rgb(253, 236, 209);
+    --lightPurple:rgb(189, 129, 224);
+    --purple: rgb(56, 42, 84);
+}
+
+@media only screen and (max-width:480px) {
+    
+}
+@media only screen and (min-width: 481px){
+
+}
+
+@media only screen and (min-width:1024pc){
+
+}
+
+#nav{
+    border-top: solid rgb(189, 129, 224) 10px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 5rem; */
+    height:5em;
+    /* height: 75px; */
+    
+    background: linear-gradient( rgb(189, 129, 224),rgb(253, 236, 209));
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.my-name{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(56, 42, 84);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    /* font-size: 25px */
+    /* background-blend-mode: saturation; */
+}
+
+.tabs{
+    display: flex;
+}
+
+.tabs li{
+    display: inline;
+}
+
+.tabs a{
+    text-decoration: none;
+    /* padding-right: 15px; */
+    padding-right: 1.2em;
+    color: rgb(56, 42, 84);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+
+/* end of all CSS for navbar */
+
+/* START OF CSS for alexis content */
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 3rem; */
+    /* if I increase the font, it messes uo  */
+}
+
+.string {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: move 4s infinite;
+}
+
+.greeting {
+    position: relative;
+    top: 8.6vmin;
+    animation: white-out 5s infinite;
+}
+
+/* .closure::after {
+    content: '';
+    position: absolute;
+    height: 20vmin;
+    width: 45vmin;
+    background:  white;
+    transform: translate(-45vmin, -24.5vmin);
+} */
+
+/* .closure::before {
+    content: '';
+    position: absolute;
+    height: 16vmin;
+    background: white;
+    transform: translate(-40vmin, 5vmin);
+} */
+
+.en {
+    color: #fa8231;
+}
+
+.es {
+    color: white;
+}
+
+.de {
+    color: #c678dd;
+}
+
+.it {
+    color: #a9b0bd;
+}
+
+@keyframes move {
+    25% {
+        transform: translatey(-5.8vmin);
+        opacity: 1;
+    }
+    50% {
+        transform: translatey(-11vmin);
+    }
+    75% {
+        transform: translatey(-16.5vmin);
+    }
+}
+
+
+#alexis-content{
+    text-align: center;
+    padding-top: 200px;
+    /* padding: 200px 100px 0px 100px; */
+    padding: 12.5rem 6.25rem 0rem 6.25rem;
+
+}
+
+.title{
+    /* padding-bottom: 125px; */
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.picture{
+    border: solid black 2px;
+    border-radius: 20px;
+    border-color: var(--purple) ;
+    text-align: center;
+    /* height: 525px; */
+    height: 33rem;
+    /* width: 450px; */
+    width: 28.2rem;
+    /* margin: 0px 50px 0px 0px; */
+    margin: 0rem 3.15rem 0rem 0rem;;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 50px 30px -7px;
+    background-color:var(--tan);
+}
+
+
+
+#picture-row{
+    display: flex;
+    justify-content: center;
+}
+.picture img{
+    cursor: pointer;
+    /* height: 355px; */
+    height:22em;
+    /* width: 370px; */
+    width:21em;
+    /* margin-top: 25px; */
+    margin-top: 1.5em;
+    /* margin-bottom: 25px; */
+    margin-bottom: 1.5em;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 5px gray;
+}
+
+
+
+
+.picture p{
+    /* margin: 0px 10px 25px 10px; */
+    margin: 0em .6em 1.5em .6em; 
+    padding: 0em 1em 0em 1em;
+    text-shadow: 2px 2px 5px #c678dd ;
+}
+
+.description{
+    margin-top: 10rem;
+    text-align: center;
+    padding: .6rem 9.4rem .6rem 9.4rem;
+}
+
+.description h2{
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.description p{
+    padding-top: 5rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* start of css for Word Cloud */
+
+#word-cloud-section{
+    text-align: center;
+}
+
+#cloud-title h2 {
+    font-size: 2.5rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+
+/* START OF WORD CLOUD */
+#cloud-title button{
+    margin-top: 2.2em;
+
+    left: calc(50% - 3em);
+    top: calc(50% - 2em);
+    animation: wiggle 2s linear infinite;
+    height: 4em;
+    width: 7em;
+    background: linear-gradient( rgb(189, 129, 224),rgb(253, 236, 209));
+    border: none;
+    border-top: 3px solid var(--tan);
+    border-radius: 0 0 0.2em 0.2em;
+    color: rgb(56, 42, 84);
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 1em;
+    transform-origin: 50% 5em;
+    cursor: pointer;
+}
+
+@keyframes wiggle{
+    0%, 7% {
+        transform: rotateZ(0deg);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#word-cloud{
+    padding: 9.4rem 15.6em 0em 15.6em;
+    height: 25em;
+    margin-bottom: 6.25em;
+}
+
+ul.cloud{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+    /* opacity: calc((15 - (9 - var(--size))) / 12); 
+    animation: fadeIn 8s;
+    -webkit-animation: fadeIn 8s;
+    -moz-animation: fadeIn 8s;
+    -o-animation: fadeIn 8s;
+    -ms-animation: fadeIn 8s; */
+}
+
+ul.cloud a {
+    color: #a33;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0.35rem;
+    text-decoration: none;
+    position: relative;
+    --size: 4;
+    font-size: calc(var(--size) * 0.45rem + 0.5rem);
+    /* opacity: calc((15 - (9 - var(--size))) / 12); 
+    animation: fadeIn 8s;
+    -webkit-animation: fadeIn 8s;
+    -moz-animation: fadeIn 8s;
+    -o-animation: fadeIn 8s;
+    -ms-animation: fadeIn 8s; */
+}
+
+.fadeIn{    
+    opacity: calc((15 - (9 - var(--size))) / 12); 
+    animation: fadeIn 8s;
+    -webkit-animation: fadeIn 8s;
+    -moz-animation: fadeIn 8s;
+    -o-animation: fadeIn 8s;
+    -ms-animation: fadeIn 8s;
+}
+
+/* .hidden{
+    visibility: hidden;
+} */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+ul.cloud a[data-weight="1"] { --size: 1; }
+ul.cloud a[data-weight="2"] { --size: 2; }
+ul.cloud a[data-weight="3"] { --size: 3; }
+ul.cloud a[data-weight="4"] { --size: 4; }
+ul.cloud a[data-weight="5"] { --size: 5; }
+ul.cloud a[data-weight="6"] { --size: 6; }
+ul.cloud a[data-weight="7"] { --size: 7; }
+ul.cloud a[data-weight="8"] { --size: 8; }
+ul.cloud a[data-weight="9"] { --size: 9; }
+ul.cloud a[data-weight="10"] { --size: 10; }
+ul.cloud a[data-weight="11"] { --size: 11; }
+
+
+/* adds a border of the same color as the text, replacing the default outline on focus */
+/* ul.cloud a:focus {
+    outline: 1px dashed;
+}  */
+
+
+/* this is to show the data weight of each word but it did not work */
+/* ul.cloud[data-show-value] a ::after {
+    content: " (" attr(data-weight) ")";
+    font-size: 1rem;
+} */
+
+
+
+
+
+
+/* start of css for projects */
+
+h2{
+    text-align: center;
+}
+
+#project-section{
+    margin-top: 50px;
+    margin-bottom: 75px;
+    width: 700px;
+    text-align: center;
+    margin-left: 500px;
+    /* justify-content: center; */
+    /* margin left was used to center the divs, am sure there is a better way */
+}
+
+.projects{
+    border: 2px solid black;
+    background-color: rgb(72, 45, 98);
+    /* justify-content: center; */
+    /* border-top: 0px; */
+}
+
+.p2{
+    border-top: 0px;
+}
+
+.project-picture img{
+    width: 350px;
+    height:350px;
+    margin: 0px 50px 0px 50px;
+    display:block;
+
+}
+
+.overlay{
+    margin-left: 3.1em;
+    position: absolute;
+    /* right:3.125em; */
+    height: 21.875em;
+    width: 21.875em;
+    opacity: 0;
+    transition: .5 ease;
+    background-color:#a9b0bd;
+}
+
+.project-picture:hover .overlay{
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project-picture{
+    display: flex;
+}
+.project-description{
+    border-left: 2px solid black;
+    padding: 40px 5px 10px 5px;
+    background-color: var(--lightPurple);
+}
+
+.project-description h3{
+    padding-bottom: 20px;
+}
+
+.project-description img{
+    height:100px;
+    width: 100px;
+    margin: 24px 0px 10px 65px ;
+    /* background-color:; */
+}
+
+
+
+
+
+
+/* start of css for technical skills */
+
+#skill-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.skill-box{
+    width: 400px;
+
+}
+
+.skill-box h3{
+    /* margin-bottom: 10px; */
+    height:10vh;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+.skill-box img{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+
+}
+
+.lang{
+    display: flex;
+    /* justify-items: center; */
+    justify-content: space-evenly;
+
+}
+
+.lang img{
+    margin: -31px 0px 58px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+/* .skill-box i{
+    height: 100px;
+    width: 100px;
+} */
+
+.tag{
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.tag.visible{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* SOFT SKILL SECTION */
+
+#soft-skills{
+    /* flex-wrap: wrap; */
+    
+    border: 1px solid black;
+    height: 150px;
+    width: 500px;
+}
+
+#soft-skills ul{
+    font-size: 40px;
+    list-style-type: circle;
+}
+
+/* resume portion */
+
+
+#resume{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resume img{
+    border-radius: 100%;
+    height: 17em;
+    width: 17em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+}
+#footer{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 5em;
+    background: linear-gradient( rgb(189, 129, 224),rgb(253, 236, 209));
+    border-top: solid rgb(189, 129, 224) 10px; 
+    /* font-size: 1.75em; */
+}
+
+#footer p {
+    font-size: 1.75em;
+}
+
+#footer i{
+    font-size: 3em;
+}
