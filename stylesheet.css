@@ -7,7 +7,8 @@
 }
 
 body{
-    background: linear-gradient(to right, gray , rgb(146, 94, 178), gray);
+    /* background: linear-gradient(to right, gray , rgb(146, 94, 178) , gray); */
+    background-color: rgb(146, 94, 178) ;
 
 }
 h2{
@@ -95,26 +96,32 @@ h1{
 
 .greeting {
     position: relative;
-    top: 8.6vmin;
-    animation: white-out 5s infinite;
+    top: 8.65vmin;
+    animation: white-out 6.5s infinite;
 }
 
-/* .closure::after {
+.closure::after {
     content: '';
     position: absolute;
-    height: 20vmin;
-    width: 45vmin;
-    background:  white;
-    transform: translate(-45vmin, -24.5vmin);
-} */
+    height: 120px;
+    width: 350px;
+    background:  rgb(146, 94, 178);
+    transform: translate(-24vmin, 10.5vmin);
+}
 
-/* .closure::before {
+.closure::before {
     content: '';
     position: absolute;
     height: 16vmin;
-    background: white;
-    transform: translate(-40vmin, 5vmin);
-} */
+    width: 40vmin;
+    background:  rgb(146, 94, 178);
+    /* background:white; */
+    /* top: -69px; */
+    /* bottom: 1; */
+    /* left: 1; */
+    /* right: 195px; */
+    transform: translate(-24vmin, -10vmin);
+}
 
 .en {
     color: #fa8231;
@@ -171,7 +178,7 @@ h1{
     /* height: 525px; */
     height: 33rem;
     /* width: 450px; */
-    width: 28.2rem;
+    width: 28.5rem;
     /* margin: 0px 50px 0px 0px; */
     margin: 0rem 3.15rem 0rem 0rem;;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 50px 30px -7px;
@@ -226,6 +233,7 @@ h1{
 
 
 
+
 /* start of css for Word Cloud */
 
 #word-cloud-section{
@@ -235,13 +243,21 @@ h1{
 #cloud-title h2 {
     font-size: 2.5rem;
     margin-top: 8rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3.5rem;
+}
+
+#cloud-title p {
+    font-size: 20px;
+}
+
+.rotate{
+    transform: rotate(50deg);
 }
 
 
 /* START OF WORD CLOUD */
 #cloud-title button{
-    margin-top: 2.2em;
+    margin-top: 4.2em;
 
     left: calc(50% - 3em);
     top: calc(50% - 2em);
@@ -284,7 +300,7 @@ h1{
 }
 
 #word-cloud{
-    padding: 9.4rem 15.6em 0em 15.6em;
+    padding: 6.4rem 15.6em 0em 15.6em;
     height: 25em;
     margin-bottom: 6.25em;
 }
@@ -297,12 +313,7 @@ ul.cloud{
     align-items: center;
     justify-content: center;
     line-height: 2.5rem;
-    /* opacity: calc((15 - (9 - var(--size))) / 12); 
-    animation: fadeIn 8s;
-    -webkit-animation: fadeIn 8s;
-    -moz-animation: fadeIn 8s;
-    -o-animation: fadeIn 8s;
-    -ms-animation: fadeIn 8s; */
+    opacity: 0;
 }
 
 ul.cloud a {
@@ -314,16 +325,12 @@ ul.cloud a {
     position: relative;
     --size: 4;
     font-size: calc(var(--size) * 0.45rem + 0.5rem);
-    /* opacity: calc((15 - (9 - var(--size))) / 12); 
-    animation: fadeIn 8s;
-    -webkit-animation: fadeIn 8s;
-    -moz-animation: fadeIn 8s;
-    -o-animation: fadeIn 8s;
-    -ms-animation: fadeIn 8s; */
+
 }
 
 .fadeIn{    
     opacity: calc((15 - (9 - var(--size))) / 12); 
+    /* opacity: 1; */
     animation: fadeIn 8s;
     -webkit-animation: fadeIn 8s;
     -moz-animation: fadeIn 8s;
@@ -397,7 +404,7 @@ h2{
 }
 
 #project-section{
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 75px;
     width: 700px;
     text-align: center;
