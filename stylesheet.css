@@ -97,14 +97,14 @@ h1{
 .greeting {
     position: relative;
     top: 8.65vmin;
-    animation: white-out 6.5s infinite;
+    animation:  6.5s infinite;
 }
 
 .closure::after {
     content: '';
     position: absolute;
-    height: 120px;
-    width: 350px;
+    height: 123px;
+    width: 353px;
     background:  rgb(146, 94, 178);
     transform: translate(-24vmin, 10.5vmin);
 }
@@ -302,7 +302,7 @@ h1{
 #word-cloud{
     padding: 6.4rem 15.6em 0em 15.6em;
     height: 25em;
-    margin-bottom: 6.25em;
+    margin-bottom: 1.25em;
 }
 
 ul.cloud{
@@ -317,7 +317,7 @@ ul.cloud{
 }
 
 ul.cloud a {
-    color: #a33;
+    color: var(--purple);
     display: block;
     font-size: 1.5rem;
     padding: 1rem 0.35rem;
