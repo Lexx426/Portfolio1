@@ -98,6 +98,7 @@ h1{
     position: relative;
     top: 8.65vmin;
     animation:  6.5s infinite;
+    /* had white-out */
 }
 
 .closure::after {
@@ -424,6 +425,7 @@ h2{
     border-top: 0px;
 }
 
+
 .project-picture img{
     width: 350px;
     height:350px;
@@ -440,7 +442,7 @@ h2{
     width: 21.875em;
     opacity: 0;
     transition: .5 ease;
-    background-color:#a9b0bd;
+    background-color:var(--lightPurple);
 }
 
 .project-picture:hover .overlay{
@@ -448,8 +450,8 @@ h2{
 }
 
 .text {
-    color: white;
-    font-size: 20px;
+    color: var(--purple);
+    font-size: 18px;
     position: absolute;
     top: 50%;
     left: 50%;
