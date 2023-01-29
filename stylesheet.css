@@ -97,9 +97,9 @@ h1{
 .greeting {
     position: relative;
     top: 8.65vmin;
-
+    
     animation:  6.5s infinite;
-
+    /* had white-out */
 }
 
 .closure::after {
@@ -107,7 +107,7 @@ h1{
     position: absolute;
 
     height: 123px;
-    width: 353px;
+    width: 370px;
 
     background:  rgb(146, 94, 178);
     transform: translate(-24vmin, 10.5vmin);
@@ -117,7 +117,7 @@ h1{
     content: '';
     position: absolute;
     height: 16vmin;
-    width: 40vmin;
+    width: 50vmin;
     background:  rgb(146, 94, 178);
     /* background:white; */
     /* top: -69px; */
@@ -432,6 +432,7 @@ h2{
     border-top: 0px;
 }
 
+
 .project-picture img{
     width: 350px;
     height:350px;
@@ -448,7 +449,7 @@ h2{
     width: 21.875em;
     opacity: 0;
     transition: .5 ease;
-    background-color:#a9b0bd;
+    background-color:var(--lightPurple);
 }
 
 .project-picture:hover .overlay{
@@ -456,8 +457,8 @@ h2{
 }
 
 .text {
-    color: white;
-    font-size: 20px;
+    color: var(--purple);
+    font-size: 18px;
     position: absolute;
     top: 50%;
     left: 50%;
