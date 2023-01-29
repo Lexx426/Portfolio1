@@ -97,7 +97,7 @@ h1{
 .greeting {
     position: relative;
     top: 8.65vmin;
-
+    
     animation:  6.5s infinite;
     /* had white-out */
 }
@@ -107,7 +107,7 @@ h1{
     position: absolute;
 
     height: 123px;
-    width: 353px;
+    width: 370px;
 
     background:  rgb(146, 94, 178);
     transform: translate(-24vmin, 10.5vmin);
@@ -117,7 +117,7 @@ h1{
     content: '';
     position: absolute;
     height: 16vmin;
-    width: 40vmin;
+    width: 50vmin;
     background:  rgb(146, 94, 178);
     /* background:white; */
     /* top: -69px; */
