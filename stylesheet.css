@@ -97,7 +97,7 @@ h1{
 .greeting {
     position: relative;
     top: 8.65vmin;
-    
+
     animation:  6.5s infinite;
     /* had white-out */
 }
