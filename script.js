@@ -1,3 +1,25 @@
+
+var menu_btn = document.querySelector('.hamburger');
+var mobile_menu = document.querySelector('.mobile-nav');
+
+function responsiveNav(){
+    menu_btn.addEventListener('click', function() {
+        menu_btn.classList.toggle('is-active');
+        mobile_menu.classList.toggle('is-active');
+    });
+}
+
+
+function removeMobileNav(){
+    mobile_menu.classList.remove('is-active');
+    menu_btn.classList.toggle('is-active');
+};
+
+
+
+
+
+
 var wasClicked = false;
 
 function changePic1(element){
@@ -42,13 +64,14 @@ function changePic3(element){
 var btnFade = document.querySelector(".btn-transition");
 var cloud = document.querySelector("ul.cloud");
 
-fadeInCloud();
+
 
 function fadeInCloud(){
     btnFade.addEventListener("click", () =>{
         cloud.classList.toggle("fadeIn");
     })
 }
+// fadeInCloud();
 
 
 $(document).on("scroll", function() {

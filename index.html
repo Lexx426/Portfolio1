@@ -11,21 +11,36 @@
     <title>Alexis' Portfolio</title>
 </head>
 <body>
-    <div id="nav">
-        <div class="my-name">
-            <p> Alexis Valeria Tamayo</p>
-            <img src="" alt="">
+    <header>
+        <div class="container">
+            <!-- <div class="my-name"> -->
+            <h4><span> Alexis</span> Valeria Tamayo</h4>
+            <!-- </div> -->
+            <nav>
+                <div class="navigation-a">
+                    <a class="navigation-a" href="#about_me"> About Me </a>
+                    <a class="navigation-a" href="#project-tag"> Projects </a>
+                    <a class="navigation-a"href="#resume"> Resume </a>
+                    <a class="navigation-a"href="#resume"> Education </a>
+                    <a class="navigation-a"href="#resume"> Contact me </a>
+                </div>
+            </nav>
+            <button class="hamburger"  onclick="responsiveNav()">
+                <div class="bar"></div>
+            </button>
         </div>
-        <div class="tabs">
-            <ul>
-                <li><a href="#about_me"> About Me </a></li>
-                <li><a href="#project-tag"> Projects </a></li>
-                <li><a href="#resume"> Resume </a></li>
-                <li><a href="#resume"> Education </a></li>
-                <li><a href="#resume"> Contact me </a></li>
-            </ul>
-        </div>
-    </div>
+    </header>
+    <nav class="mobile-nav" >
+        <a onclick="removeMobileNav()" href="#about_me"> About Me </a>
+        <a onclick="removeMobileNav()" href="#project-tag"> Projects </a>
+        <a onclick="removeMobileNav()" href="#resume"> Resume </a>
+        <a onclick="removeMobileNav()" href="#resume"> Education </a>
+        <a onclick="removeMobileNav()" href="#resume"> Contact me </a>
+    </nav>
+
+
+
+
     <div id="alexis-content">
         <div class="title tag">
             <h1>Console<span style="color:white;">.<span style="color:#e06c75;">log</span>("</h1>
