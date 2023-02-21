@@ -9,7 +9,9 @@ body{
     /* background: linear-gradient(to right, gray , rgb(146, 94, 178) , gray); */
     background-color: rgb(146, 94, 178) ;
 
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
+
+
 
 }
 h4{
@@ -24,10 +26,10 @@ h4{
 }
 
 
-.container {
+.container-2 {
     width: 100%;
     max-width: 1600px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-left: 1em;
     padding-right: 1em;
     border-top: solid rgb(189, 129, 224) 10px;
@@ -126,8 +128,8 @@ h4{
 
 header{
     position: fixed;
-    width: 100vw;
-    z-index: 101;
+    /* width: 100vw; */
+    z-index: 101; 
 }
 
 .navigation-a  {
@@ -507,9 +509,9 @@ h2{
 #project-section{
     margin-top: 25px;
     margin-bottom: 75px;
-    width: 700px;
+    width: 43.75rem ;
     text-align: center;
-    margin-left: 500px;
+    /* margin-left: 500px; */
     /* justify-content: center; */
     /* margin left was used to center the divs, am sure there is a better way */
 }
@@ -696,7 +698,7 @@ h2{
 }
 
 
-@media (max-width: 480px){
+/* @media (max-width: 480px){
     #picture-row{
         display: block;
 
@@ -711,4 +713,4 @@ h2{
 
 @media (min-width:1024px){
 
-}
+} */
