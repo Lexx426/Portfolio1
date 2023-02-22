@@ -13,37 +13,36 @@
     <title>Alexis' Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="container-2">
-                <!-- <div class="my-name"> -->
-                <h4><span> Alexis</span> Valeria Tamayo</h4>
-                <!-- </div> -->
-                <nav>
-                    <div class="navigation-a">
-                        <a class="navigation-a" href="#about_me"> About Me </a>
-                        <a class="navigation-a" href="#project-tag"> Projects </a>
-                        <a class="navigation-a"href="#resume"> Resume </a>
-                        <a class="navigation-a"href="#resume"> Education </a>
-                        <a class="navigation-a"href="#resume"> Contact me </a>
-                    </div>
-                </nav>
-                <button class="hamburger"  onclick="responsiveNav()">
-                    <div class="bar"></div>
-                </button>
-            </div>
-        </header>
-        <nav class="mobile-nav" >
-            <a onclick="removeMobileNav()" href="#about_me"> About Me </a>
-            <a onclick="removeMobileNav()" href="#project-tag"> Projects </a>
-            <a onclick="removeMobileNav()" href="#resume"> Resume </a>
-            <a onclick="removeMobileNav()" href="#resume"> Education </a>
-            <a onclick="removeMobileNav()" href="#resume"> Contact me </a>
-        </nav>
+    <header>
+        <div class="container-2 navbar ">
+            <!-- <div class="my-name"> -->
+            <h4><span> Alexis</span> Valeria Tamayo</h4>
+            <!-- </div> -->
+            <nav>
+                <div class="navigation-a">
+                    <a class="navigation-a" href="#about_me"> About Me </a>
+                    <a class="navigation-a" href="#project-tag"> Projects </a>
+                    <a class="navigation-a"href="#resume"> Resume </a>
+                    <a class="navigation-a"href="#resume"> Education </a>
+                    <a class="navigation-a"href="#resume"> Contact me </a>
+                </div>
+            </nav>
+            <button class="hamburger"  onclick="responsiveNav()">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+    <nav class="mobile-nav" >
+        <a onclick="removeMobileNav()" href="#about_me"> About Me </a>
+        <a onclick="removeMobileNav()" href="#project-tag"> Projects </a>
+        <a onclick="removeMobileNav()" href="#resume"> Resume </a>
+        <a onclick="removeMobileNav()" href="#resume"> Education </a>
+        <a onclick="removeMobileNav()" href="#resume"> Contact me </a>
+    </nav>
 
 
 
-
+    <div class="container"></div>
         <div id="alexis-content">
             <div class="title tag">
                 <h1>Console<span style="color:white;">.<span style="color:#e06c75;">log</span>("</h1>
@@ -55,23 +54,29 @@
                 </div>
                 <h1 class="closure">");</h1>
             </div>    
-            <div id="picture-row" class="row">
-                <div class="picture tag">
-                    <img id="firstPic" onclick="changePic1(this)" src="./assets/ChickPick.JPG" alt=" Pictures of me volunteering in Kentucky ">
-                    <p> There's nothing that I love more than creating and building. In this case, I volunteered in Kentucky to rebuild houses. </p>
-                    <p> Can't say I love how sore I was though.</p>
-                    <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo dolor rerum soluta sapiente expedita eveniet! Nihil vel eveniet soluta, error sed deleniti voluptate deserunt, iste sint perspiciatis veritatis in?</p> -->
+            <div id="picture-row" class="row justify-content-center row-cols-1 row-cols-md-2 g-4">
+                
+                <div class="picture  card picture-1">
+                    <div class="card-body">
+                        <img class="img-fluid"id="firstPic" onclick="changePic1(this)" src="./assets/ChickPick.JPG" alt=" Pictures of me volunteering in Kentucky ">
+                        <p class="card-text"> There's nothing that I love more than creating and building. In this case, I volunteered in Kentucky to rebuild houses. </p>
+                        <p class="card-text"> Can't say I love how sore I was though.</p>
+                        <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo dolor rerum soluta sapiente expedita eveniet! Nihil vel eveniet soluta, error sed deleniti voluptate deserunt, iste sint perspiciatis veritatis in?</p> -->
+                    </div>
                 </div>
-                <div class="picture tag">
-                    <img id="secPic" onclick="changePic2(this)" src="./assets/PoohMeetGreet.jpg" alt=" Pictures of me at Disney World with Winnie ">
-                    <p>  "It never hurts to keep looking for sunshine." -Eeyore </p>
-                    <p> While Winnie is still my favorite, sad I did not get a picture with Eeyore. </p>
-                    <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo dolor rerum soluta sapiente expedita eveniet! Nihil vel eveniet soluta, error sed deleniti voluptate deserunt, iste sint perspiciatis veritatis in?</p> -->
+                
+                <div class="picture card">
+                    <div class="card-body">
+                        <img  class="img-fluid" id="secPic" onclick="changePic2(this)" src="./assets/PoohMeetGreet.jpg" alt=" Pictures of me at Disney World with Winnie ">
+                        <p class="card-text">  "It never hurts to keep looking for sunshine." -Eeyore </p>
+                        <p class="card-text"> While Winnie is still my favorite, sad I did not get a picture with Eeyore. </p>
+                    </div>
                 </div>
-                <div class="picture tag">
-                    <img id="thirdPic" onclick="changePic3(this)" src="./assets/kotrynaProm.JPG" alt=" Pictures of me at work">
-                    <p> If I had a penny for every joyful moment I had with Starbucks - I would have more money than Jeff Bezos. Can't wait to see how many more pennies I'll earn in my new position! </p>
-                    <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nemo dolor rerum soluta sapiente expedita eveniet! Nihil vel eveniet soluta, error sed deleniti voluptate deserunt, iste sint perspiciatis veritatis in?</p> -->
+                <div class="picture card">
+                    <div class="card-body">
+                        <img class="img-fluid" id="thirdPic" onclick="changePic3(this)" src="./assets/kotrynaProm.JPG" alt=" Pictures of me at work">
+                        <p class="card-text"> If I had a penny for every joyful moment I had with Starbucks - I would have more money than Jeff Bezos. Can't wait to see how many more pennies I'll earn in my new position! </p>
+                    </div>
                 </div>
             </div>
             <div id = "about_me" class="description">
@@ -169,10 +174,6 @@
                     <h3> Java </h3>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" />
                 </div>
-                <div class="lang tag">
-                    <h3 > Python </h3>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
-                </div>
             </div>
 
             <div class="skill-box ">
@@ -190,6 +191,10 @@
                 <div class="lang tag">
                     <h3> Flask </h3>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+                </div>
+                <div class="lang tag">
+                    <h3 > Python </h3>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
                 </div>
             </div>
             <div class="skill-box ">
