@@ -178,7 +178,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-size: 3rem; */
+    /* font-size: 3em; */
     /* if I increase the font, it messes uo  */
 }
 
@@ -186,38 +186,45 @@ h1{
     display: flex;
     flex-direction: column;
     text-align: center;
-    animation: move 4s infinite;
+    animation: move 5.5s infinite;
+    white-space: nowrap;
 }
 
 .greeting {
     position: relative;
-    top: 8.65vmin;
+    top: 10.5vmin;
 
-    animation:  6.5s infinite;
+    /* animation: 6.5s infinite; */
     /* had white-out */
 }
 
 .closure::after {
     content: '';
     position: absolute;
-    height: 120px;
-    width: 350px;
+    height:43vmin;
+    width: 91vmin;
     background:  rgb(146, 94, 178);
-    transform: translate(-24vmin, 10.5vmin);
+    /* background: #fff; */
+    /* transform: translate(-24vmin, 10.5vmin); */
+    transform: translate(-45vmin, -24.5vmin);
 }
 
 .closure::before {
     content: '';
     position: absolute;
-    height: 16vmin;
-    width: 50vmin;
+    height: 22vmin;
+    /* height: 25vmin;
+    width: 40vmin; */
+    width: 94vmin;
     background:  rgb(146, 94, 178);
+    /* background: black; */
     /* background:white; */
     /* top: -69px; */
     /* bottom: 1; */
     /* left: 1; */
     /* right: 195px; */
-    transform: translate(-24vmin, -10vmin);
+    transform: translate(-26vmin, 15vmin);
+    /* transform: translate(-40vmin, 5vmin); */
 }
 
 .en {
@@ -238,14 +245,14 @@ h1{
 
 @keyframes move {
     25% {
-        transform: translatey(-5.8vmin);
+        transform: translatey(-7vmin);
         opacity: 1;
     }
     50% {
-        transform: translatey(-11vmin);
+        transform: translatey(-14vmin);
     }
     75% {
-        transform: translatey(-16.5vmin);
+        transform: translatey(-20.5vmin);
     }
 }
 
@@ -565,14 +572,17 @@ h2{
     /* padding: 40px 5px 10px 5px; */
     background-color: var(--lightPurple);
 }
-
-
-
 .project-description img{
     height:80px;
     width: 80px;
     margin: auto;
 }
+
+/* @media (max-width:790px){
+    .project-picture{
+        display: block;
+    }
+} */
 
 
 
@@ -658,23 +668,13 @@ h2{
 
 }
 #footer{
-    display: table;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 5em;
+    /* height: 5em; */
     background: linear-gradient( rgb(189, 129, 224),rgb(253, 236, 209));
     border-top: solid rgb(189, 129, 224) 10px; 
-    /* font-size: 1.75em; */
 }
 
-#footer p {
-    font-size: 1.75rem;
-}
-
-#footer i{
-    font-size: 3rem;
-}
 
 
