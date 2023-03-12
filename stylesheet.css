@@ -8,11 +8,7 @@
 body{
     /* background: linear-gradient(to right, gray , rgb(146, 94, 178) , gray); */
     background-color: rgb(146, 94, 178) ;
-
     overflow-x: hidden !important;
-
-
-
 }
 h4{
     font-size: calc(14px + 1.5vw);
@@ -120,15 +116,10 @@ h4{
     
 }
 
-.nav { 
 
-    /* display: flex; */
-    font-size: 1em;
-}
 
 header{
     position: fixed;
-    /* width: 100vw; */
     width: 100%;
     z-index: 101; 
 }
@@ -140,7 +131,7 @@ header{
     color: rgb(56, 42, 84); 
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
     font-weight: bold; 
-    font-size: 1em;
+    font-size: 1.03em;
 }
 
 .navigation-a a{
@@ -288,20 +279,10 @@ h1{
     line-height: normal;
 }
 
-
-
-#picture-row{ 
-    /* justify-content: center; */
-}
 .picture img{
     cursor: pointer;
-    /* height: 355px; */
-    /* height:22em; */
-    /* width: 370px; */
-    /* width:21em; */
-    /* margin-top: 25px; */
+    min-height:22em;
     margin-top: 0.5em;
-    /* margin-bottom: 25px; */
     margin-bottom: 1.5em;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 5px gray;
@@ -326,6 +307,7 @@ h1{
     /* margin: 0em .6em 1.5em .6em; 
     padding: 0em 1em 0em 1em; */
     text-shadow: 2px 2px 5px #c678dd ;
+    font-size: 1.05em;
 }
 
 .description{
@@ -336,12 +318,13 @@ h1{
 
 .description h2{
     padding-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 550;
 }
 
 .description p{
     padding-top: 5rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 
@@ -353,13 +336,14 @@ h1{
 }
 
 #cloud-title h2 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 550;
     margin-top: 8rem;
     margin-bottom: 3.5rem;
 }
 
 #cloud-title p {
-    font-size: 20px;
+    font-size: 1.6rem;
 }
 
 
@@ -370,14 +354,14 @@ h1{
     top: calc(50% - 2em);
     animation: wiggle 2s linear infinite;
     height: 3em;
-    width: 7em;
+    width: 7.5em;
     background: linear-gradient( rgb(189, 129, 224),rgb(253, 236, 209));
     border: none;
     border-top: 2px solid var(--tan);
     border-radius: 0 0 0.2em 0.2em;
     color: rgb(56, 42, 84);
     font-family: Helvetica, Arial, Sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
     transform-origin: 50% 5em;
     cursor: pointer;
 }
@@ -431,7 +415,7 @@ ul.cloud{
     align-items: center;
     justify-content: center;
     line-height: 2.5rem;
-    opacity: 1;
+    opacity: 0;
 }
 
 ul.cloud a {
@@ -461,9 +445,10 @@ ul.cloud a[data-weight="10"] { --size: 10; }
 ul.cloud a[data-weight="11"] { --size: 11; }
 
 .fadeIn{    
-    opacity: calc((15 - (9 - var(--size))) / 12); 
+    /* opacity: calc((15 - (9 - var(--size))) / 12);  */
     /* opacity: 1; */
     animation: fadeIn 8s;
+    /* transition: fadeIn 8s; */
     -webkit-animation: fadeIn 8s;
     -moz-animation: fadeIn 8s;
     -o-animation: fadeIn 8s;
@@ -504,11 +489,13 @@ ul.cloud a[data-weight="11"] { --size: 11; }
 
 h2{
     text-align: center;
+    font-size: 2.75rem;
+    font-weight: 550;
 }
 
 #project-section{
     margin-top: 25px;
-    margin-bottom: 75px;
+    margin-bottom: 13rem;
     text-align: center;
 }
 
@@ -588,7 +575,7 @@ h2{
     }
 }
 .project-description{
-    border-left: 2px solid black;
+    border: 2px solid black;
     background-color: var(--lightPurple);
 }
 .project-description img{
@@ -614,7 +601,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 .skill-box{
