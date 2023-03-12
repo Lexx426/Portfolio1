@@ -61,14 +61,19 @@ function changePic3(element){
     }
 }
 
-var btnFade = document.querySelector(".btn-transition");
+// var btnFade = document.querySelector(".btn-transition");
+var btnFade = document.getElementById("switch");
 var cloud = document.querySelector("ul.cloud");
+// var cloud = document.getElementById("word-cloud");
+// targeting the entire  section, #word-cloud being the parent of ul.cloud
+
 
 
 
 function fadeInCloud(){
     btnFade.addEventListener("click", () =>{
         cloud.classList.toggle("fadeIn");
+        // addClass does not work at all
     })
 }
 // fadeInCloud();
