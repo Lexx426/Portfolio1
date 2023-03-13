@@ -416,6 +416,15 @@ ul.cloud{
     justify-content: center;
     line-height: 2.5rem;
     opacity: 0;
+
+}
+
+.transform{
+    transition: all 8s;
+} 
+
+.transform-active{
+    opacity: 1;
 }
 
 ul.cloud a {
@@ -446,7 +455,7 @@ ul.cloud a[data-weight="11"] { --size: 11; }
 
 .fadeIn{    
     /* opacity: calc((15 - (9 - var(--size))) / 12);  */
-    /* opacity: 1; */
+    opacity: 1;
     animation: fadeIn 8s;
     /* transition: fadeIn 8s; */
     -webkit-animation: fadeIn 8s;
@@ -454,6 +463,7 @@ ul.cloud a[data-weight="11"] { --size: 11; }
     -o-animation: fadeIn 8s;
     -ms-animation: fadeIn 8s;
 }
+
 
 
 @keyframes fadeIn {
