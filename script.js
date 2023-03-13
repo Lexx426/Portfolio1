@@ -76,7 +76,7 @@ function fadeInCloud(){
         // addClass does not work at all
     })
 }
-// fadeInCloud();
+
 
 
 $(document).on("scroll", function() {
