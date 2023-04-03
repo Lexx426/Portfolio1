@@ -416,15 +416,12 @@ ul.cloud{
     justify-content: center;
     line-height: 2.5rem;
     opacity: 0;
+    transition: opacity 8s;
 
 }
 
-.transform{
-    transition: all 8s;
-} 
-
-.transform-active{
-    opacity: 1;
+.transition-active{
+    opacity: 1 !important;
 }
 
 ul.cloud a {
@@ -454,7 +451,6 @@ ul.cloud a[data-weight="10"] { --size: 10; }
 ul.cloud a[data-weight="11"] { --size: 11; }
 
 .fadeIn{    
-    /* opacity: calc((15 - (9 - var(--size))) / 12);  */
     opacity: 1;
     animation: fadeIn 8s;
     /* transition: fadeIn 8s; */
@@ -491,10 +487,6 @@ ul.cloud a[data-weight="11"] { --size: 11; }
     100% { opacity: 1; }
 }
 
-
-
-
-
 /* start of css for projects */
 
 h2{
@@ -513,8 +505,6 @@ h2{
     max-width: 900px;
     min-width: 426px;
 }
-
-
 
 .projects{
     border: 2px solid black;
