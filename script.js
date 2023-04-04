@@ -71,14 +71,14 @@ var cloud = document.querySelector("ul.cloud");
 
 
 function fadeInCloud(){
-    btnFade.addEventListener("click", (event) =>{
+    // btnFade.addEventListener("click", (event) =>{
         // cloud.classList.toggle("fadeIn");  // fade in is the original animation used
 
         cloud.classList.add("transition-active"); // does not show up 
         console.log(event.detail)
 
         // cloud.classList.toggle("transition-active"); // does not show up at all
-    })
+    // })
 }
 
 
