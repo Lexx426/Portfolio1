@@ -14,6 +14,10 @@ body{
 h4{
     font-size: calc(14px + 1.5vw);
     white-space: pre;
+    font-weight: 700;
+    -webkit-text-stroke: 0.5px white;
+    /* color: var(--background); */
+    color: white;
 
 }
 :root{
@@ -36,11 +40,15 @@ h4{
     padding-right: 1em;
     /* border-top: solid rgb(189, 129, 224) 10px; */
     /* background: linear-gradient( rgb(189, 129, 224),rgb(253, 236, 209));  */
-    background: linear-gradient( var(--purple), var(--tan)); 
+    /* background: linear-gradient( var(--purple), var(--tan));  */
+    background: linear-gradient( var(--purple), rgb(159, 161, 173)); 
+
+    rgb(159, 161, 173)
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
     height:5em;
+
 
 
     /* @media (max-width: 1024px){
@@ -119,7 +127,7 @@ h4{
     font-size: 2.5vw;
     padding: 12px 16px;
     background-color:#6a358d; 
-    color: var(--tan);
+    color: white;
     /* -webkit-text-stroke: 1px white; */
     text-decoration: none;
     
@@ -289,8 +297,10 @@ h1{
     /* margin: 0rem 3.15rem 0rem 0rem; */
     /* box-shadow: rgba(0, 0, 0, 0.2) 0px 50px 30px -7px; */
     /* box-shadow: rgba(131, 129, 129, 0.2) 0px 50px 30px -7px; */
-    box-shadow: rgba(246, 243, 243, 0.2) 0px 50px 30px -7px;
-    background-color:var(--tan);
+    /* box-shadow: rgba(246, 243, 243, 0.2) 0px 50px 30px -7px; */
+    box-shadow: rgba(197, 194, 194, 0.2) 0px 50px 30px -7px;
+    /* background-color:var(--tan); */
+    background-color: rgb(159, 161, 173);
     line-height: normal;
 }
 
@@ -543,7 +553,6 @@ h2{
     margin: 0rem 3.125rem 0rem 3.125rem;
     display:block;
     border: 2px solid black;
-
 }
 
 .overlay{
@@ -613,6 +622,8 @@ h2{
 
 }
 
+
+
 /* @media (max-width:790px){
     .project-picture{
         display: block;
@@ -620,7 +631,9 @@ h2{
 } */
 
 
-
+.project-picture  .borderless{
+    border: none;
+}
 
 
 
@@ -712,17 +725,20 @@ h2{
     width: 100%;
     /* height: 5em; */
 
-    background: linear-gradient( rgb(253, 236, 209),rgb(189, 129, 224));
-    border-top: solid var(--tan) 1px; 
+    /* background: linear-gradient( rgb(253, 236, 209),rgb(189, 129, 224)); */
+    background: linear-gradient(  rgb(159, 161, 173), var(--purple));
+    /* border-top: solid var(--tan) 1px;  */
 }
 
-#footer h3{
+#footer .h3{
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
     line-height: 1.2;
+    color: white;
+
 }
 
-h3 {
+h3, h4 {
     margin-bottom: 0 !important;
 }
